@@ -21,3 +21,9 @@ jobs:
           record: true
         env: 
           CYPRESS_RECORD_KEY: ${{ secrets.CYPRESS_RECORD_KEY }}
+
+      - name: upload report
+        uses: actions/upload-artifact@v4
+        with:
+          name: Report
+          path: cypress\reports\html
