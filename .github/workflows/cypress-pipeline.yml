@@ -13,13 +13,12 @@ jobs:
 
     # steps to run the tests
     steps:
-      # project clone
       - name: Checkout/Clone project
-       uses: actions/checkout@v4
+        uses: actions/checkout@v4
 
       # example of terminal execution
       - name: Install project dependencies
-          run: echo Fernando Braga
+        run: echo Fernando Braga
 
       # execution and config of project
       - name: Run tests
