@@ -1,26 +1,20 @@
-# pipeline name
 name: Run basic Tests
-# when pipeline will be executed
+
 on: 
   pull_request:
     branches: [master]
     
 jobs:
-  # what will be done in this pipeline
   cypress-run:
-  # machines that will be executed
     runs-on: ubuntu-latest
 
-    # steps to run the tests
     steps:
       - name: Checkout/Clone project
         uses: actions/checkout@v4
 
-      # example of terminal execution
       - name: Install project dependencies
         run: echo Fernando Braga
 
-      # execution and config of project
       - name: Run tests
         uses: cypress-io/github-action@v6
         with:
