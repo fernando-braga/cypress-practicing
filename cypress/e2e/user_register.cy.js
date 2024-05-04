@@ -19,7 +19,7 @@ describe('User register', () => {
         userRegister.elements.emailField().click().type(faker.internet.email());
         userRegister.elements.passwordField().click().type('123456');
         userRegister.elements.registerBtn().click();
-        userRegister.elements.errorMessage().contains('O campo nome deve ser prenchido');
+        userRegister.elements.errorMessage().contains('O campo nome deve ser preenchido');
     });
 
     it('Empty e-mail field', () => {
